@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Enums
+namespace MCP_Client.OpenApi
 {
-    public enum Roles
+    internal class OpenApiMapper
     {
-        Admin,
-        Basic,
-        MCP
-
     }
 }

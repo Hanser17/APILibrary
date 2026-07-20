@@ -25,7 +25,7 @@ namespace API.Controllers
         /// <response code="204">No existen libros que cumplan el criterio de búsqueda.</response>
         /// <response code="500">Error interno del servidor.</response>
         /// 
-        [HttpGet("Get_Libros")]
+        [HttpGet("Get_Libros", Name = "GetLibros")]
         [ProducesResponseType(typeof(List<LibrosDTO>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -74,7 +74,7 @@ namespace API.Controllers
         /// 
 
         [Authorize(Roles ="Admin")]
-        [HttpPost]
+        [HttpPost("", Name = "CreateLibro")]
         [ProducesResponseType(typeof(SaveLibroDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]

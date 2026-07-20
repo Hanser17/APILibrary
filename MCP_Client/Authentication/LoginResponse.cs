@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Enums
+namespace MCP_Client.Authentication
 {
-    public enum Roles
+    internal class LoginResponse
     {
-        Admin,
-        Basic,
-        MCP
-
     }
 }

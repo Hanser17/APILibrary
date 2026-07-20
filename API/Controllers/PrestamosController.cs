@@ -38,7 +38,7 @@ namespace API.Controllers
         /// </response>
         /// 
         
-        [HttpGet("Get_Libros_No_Devueltos")]
+        [HttpGet("Get_Libros_No_Devueltos", Name = "GetLibrosNoDevueltos")]
         [ProducesResponseType(typeof(List<LibrosNoDevueltosDTO>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -88,7 +88,7 @@ namespace API.Controllers
         /// </response>
         /// 
         [Authorize(Roles ="Admin")]
-        [HttpPut]
+        [HttpPut("", Name = "UpdateLibros")]
         [ProducesResponseType(typeof(PrestamoDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -131,7 +131,7 @@ namespace API.Controllers
         /// </response>
         /// 
         [Authorize(Roles = "Admin")]
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}", Name = "DeletePrestamo")]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

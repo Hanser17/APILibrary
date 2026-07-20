@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Enums
+namespace MCP_Client.Configuration
 {
-    public enum Roles
+    internal class ApiOptions
     {
-        Admin,
-        Basic,
-        MCP
-
     }
 }

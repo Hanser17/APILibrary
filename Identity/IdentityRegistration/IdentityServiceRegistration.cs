@@ -160,6 +160,7 @@ namespace Identity.IdentityRegistration
                     await DefaultRoles.SeedAsync(roleManager);
                     await DefaultBasicUser.SeedAsync(userManager);
                     await DefaultAdminUser.SeedAsync(userManager);
+                    await DefaultMCPUser.SeedAsync(userManager);
 
                 }
                 catch (Exception ex)

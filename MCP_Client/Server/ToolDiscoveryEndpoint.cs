@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Enums
+namespace MCP_Client.Server
 {
-    public enum Roles
+    internal class ToolDiscoveryEndpoint
     {
-        Admin,
-        Basic,
-        MCP
-
     }
 }

@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Enums
+namespace MCP_Client.Abstractions
 {
-    public enum Roles
+    internal interface ITokenProvider
     {
-        Admin,
-        Basic,
-        MCP
-
     }
 }
